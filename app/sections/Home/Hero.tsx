@@ -7,7 +7,7 @@ export default function Hero() {
     const containerRef = useRef<HTMLDivElement>(null);
 
     useLayoutEffect(() => {
-        const ctx = gsap.context(() => {
+        gsap.context(() => {
             //Crear particulas
             const particlesContainer = particlesRef.current;
             if(particlesContainer){
